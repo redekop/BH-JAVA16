@@ -7,26 +7,7 @@ public class HomeWork1_2 {
 
   public static void main(String[] args) {
 
-//    int temp1;
-//    int temp2;
-//
-//    boolean isSort = true;
-//    int[] mas = {5, 8, 9, 56, 4, 54, 13, 63, 67, 1, 5};
-//
-//    while (isSort) {
-//      isSort = false;
-//      for (int i = 0; i < mas.length - 1; i++) {
-//
-//        if (mas[i] > mas[i + 1]) {
-//          temp1 = mas[i];
-//          mas[i] = mas[i + 1];
-//          mas[i + 1] = temp1;
-//          isSort = true;
-//        }
-//      }
-//    }
-//
-//    System.out.println(Arrays.toString(mas));
+
 
     /*third task--------------------------------------*/
     System.out.println("3)Как бы ты нашла минимальное и максимальное число без использования массива и методов Math.min() и Math.max()?");
@@ -60,7 +41,7 @@ public class HomeWork1_2 {
 
 
 
-    
+
     /*fifth task--------------------------------------*/
     System.out.println("\n5)обычно каждый год происходит индексация суммы, " +
             "от которой рассчитывается процент. То есть если было 1000, процент = 10%, " +
