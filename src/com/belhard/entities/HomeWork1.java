@@ -2,7 +2,7 @@ package com.belhard.entities;
 
 import java.util.Arrays;
 
-public class Main {
+public class HomeWork1 {
 
   public static void main(String[] args) {
 
@@ -42,13 +42,16 @@ public class Main {
 
     /*third task--------------------------------------*/
     System.out.println("\n3)");
+    int min;
+    int max;
     int salary1 = 1000, salary2 = 500, salary3 = 1200;
 
     int[] mas = {salary1, salary2, salary3};
-    Arrays.sort(mas);
-    System.out.println("Sorting values: ");
-    for (int i : mas) {
-      System.out.println(i);
+    //Arrays.sort(mas);
+    //System.out.println("Sorting values: ");
+    for (int i = 0; i < mas.length; i++) {
+      min = mas[0];
+      //System.out.println(i);
     }
     System.out.println("Salary difference is " + (mas[2] - mas[0]));
 
