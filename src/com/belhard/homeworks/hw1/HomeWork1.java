@@ -1,4 +1,4 @@
-package com.belhard.entities;
+package com.belhard.homeworks.hw1;
 
 import java.util.Arrays;
 
@@ -47,11 +47,11 @@ public class HomeWork1 {
     int salary1 = 1000, salary2 = 500, salary3 = 1200;
 
     int[] mas = {salary1, salary2, salary3};
-    //Arrays.sort(mas);
-    //System.out.println("Sorting values: ");
+    Arrays.sort(mas);
+    System.out.println("Sorting values: ");
     for (int i = 0; i < mas.length; i++) {
       min = mas[0];
-      //System.out.println(i);
+      System.out.println(i);
     }
     System.out.println("Salary difference is " + (mas[2] - mas[0]));
 
@@ -79,7 +79,7 @@ public class HomeWork1 {
     System.out.println("Числа из интервала от 1 до 100, которые делятся без остатка одновременно на 3 и на 7");
     for (int i = 1; i <= 100; i++) {
       if (i % 3 == 0 && i % 7 == 0) {
-        System.out.println(i);
+        System.out.print(i);
       }
     }
 
@@ -87,7 +87,7 @@ public class HomeWork1 {
     for (int i = 1; i <= 100; i++) {
       if (i % 3 == 0 || i % 5 == 0) {
         if (!(i % 3 == 0 && i % 5 == 0)) {
-          System.out.println(i);
+          System.out.print(i + " ");
         }
       }
     }
