@@ -21,7 +21,6 @@ public class EventDate {
     if (this.day == 0) {
       this.day++;
     }
-
     if (this.month == 0) {
       this.month++;
     }
