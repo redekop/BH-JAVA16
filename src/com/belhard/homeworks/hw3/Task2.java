@@ -9,27 +9,24 @@ public class Task2 {
 
   public static void main(String[] args) {
 
+    StringBuilder result = new StringBuilder();
 
-    String result = "";
-
-    ArrayList<String> list = new ArrayList<String>() {{
+    List<String> list = new ArrayList<String>() {{
       add("Мама");
       add("мыла");
       add("раму");
       add("!");
     }};
 
-    for (String i : list) {
-      result += i + " ";
+    for (int i = 0; i < list.size(); i++) {
+      result.append(list.get(i));
+      if (i < list.size() - 2) {
+        result.append(" ");
+      }
     }
 
-//    ListIterator listIterator = list.listIterator();
-//    while (listIterator.hasNext()) {
-//      result += (String) listIterator.next() + " ";
-//    }
-
     System.out.println(result);
-    System.out.println(result.toUpperCase());
+    System.out.println(result.toString().toUpperCase());
 
 
   }

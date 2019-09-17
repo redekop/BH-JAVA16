@@ -7,32 +7,26 @@ import java.util.Random;
 
 public class Task1 {
 
+  private static final int countInt = 5;
+  private static int min = -500;
+  private static int max = 500;
+  private static int diff = max - min + 1;
+  private static Random random = new Random();
+
   public static void main(String[] args) {
 
-    int min = -500;
-    int max = 500;
-    int diff = max - min;
     int sum = 0;
-    double average;
-
-    Random random = new Random();
 
     List<Integer> list = new ArrayList<>();
-    for (int i = 0; i <= 4; i++) {
-      int j = min + random.nextInt(diff + 1);
+    for (int i = 1; i <= countInt; i++) {
+      int j = min + random.nextInt(diff);
       list.add(j);
       sum += j;
     }
+
     System.out.println(list);
-
-//    ListIterator listIterator = list.listIterator();
-//    while (listIterator.hasNext()) {
-//      sum += (Integer) listIterator.next();
-//    }
-    average = (double) sum / list.size();
-
     System.out.println(sum);
-    System.out.println(average);
+    System.out.println((double) sum / list.size());
 
   }
 }
