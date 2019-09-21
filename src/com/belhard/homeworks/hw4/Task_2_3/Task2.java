@@ -2,7 +2,7 @@ package com.belhard.homeworks.hw4.Task_2_3;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Optional;
 
 public class Task2 {
 
@@ -22,14 +22,12 @@ public class Task2 {
       add(new Entity("name4"));
     }};
 
-
-    System.out.println(list.stream().filter(s -> s.getName().equals("name4")).collect(Collectors.toList()));
+    System.out.println(getByName("name3"));
   }
 
-  /*Не понятно что делать с методом*/
 
-//  public static Entity getByName(String name) {
-//    return (Entity) list.stream().filter(s -> s.getName().equals(name)).collect(Collectors.toList());
-//  }
+  public static Entity getByName(String name) {
+    return list.stream().filter(s -> s.getName().equals(name)).findAny().get();
+  }
 
 }

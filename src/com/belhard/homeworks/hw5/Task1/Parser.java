@@ -44,6 +44,27 @@ public class Parser {
             .iterator());
 
 
+//    Map<String, Integer> map = new HashMap<>();
+//    String[] line;
+//    BufferedReader rdr = new BufferedReader(new FileReader("input1.txt"));
+//
+//    while (rdr.ready()) {
+//      line = rdr.readLine().split(" ");
+//      map.put(line[0], Integer.parseInt(line[1]));
+//    }
+//    rdr.close();
+//
+//
+//    System.out.println(map.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(Collectors.toList()));
+
 
   }
 }
+
+
+
+
+
+
+
+

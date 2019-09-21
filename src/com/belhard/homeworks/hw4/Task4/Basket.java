@@ -7,14 +7,11 @@ import java.util.stream.Collectors;
 
 public class Basket {
 
-  private Map<String, Integer> map;
 
-  public void fillBasket(String name, Integer cost) {
-
-    //map.entrySet().stream().collect(Collectors.toMap(s -> ))
-
-
-
+  public double fillBasket(List<AbstractProduct> list) {
+    return list.stream()
+            .map(AbstractProduct::getCost)
+            .mapToDouble(s -> Double.parseDouble(s.toString())).sum();
   }
 
 }
