@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 
-public class Parser {
+public class FileParser1 {
 
   /*Есть список, содержащий людей и суммы на их счетах (input1.txt).
   Считать эти данные в программу, отсортировать в порядке уменьшения суммы на счету и записать в новый файл
@@ -30,16 +30,10 @@ public class Parser {
             .collect(toMap(s -> s.split("\\s")[0], s -> Integer.parseInt(s.split("\\s")[1])));
 
 
-    if (newFile.exists()) {
-      newFile.delete();
-    } else {
-      newFile.createNewFile();
-    }
-
     Files.write(Paths.get("newinput1.txt"),
             () -> map.entrySet()
             .stream()
-            .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+            .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
             .<CharSequence>map(e -> e.getKey() + " " + e.getValue())
             .iterator());
 

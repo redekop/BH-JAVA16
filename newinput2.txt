@@ -1,0 +1,10 @@
+AccountHolder{name='alexey', account=600.0}
+AccountHolder{name='olga', account=600.0}
+AccountHolder{name='ivan', account=1200.0}
+AccountHolder{name='boris', account=3500.0}
+AccountHolder{name='inna', account=0.0}
+AccountHolder{name='nikolay', account=600.0}
+AccountHolder{name='vasily', account=0.0}
+AccountHolder{name='marina', account=600.0}
+AccountHolder{name='sergei', account=200.0}
+AccountHolder{name='andrei', account=5600.0}
